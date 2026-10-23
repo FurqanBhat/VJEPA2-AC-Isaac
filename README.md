@@ -1,8 +1,3 @@
-Here is a complete `README.md` file tailored specifically to the functionality, dependencies, and ROS 2 architecture of your `run_vjepa2.py` script.
-
-You can copy and paste this directly into your repository.
-
-```markdown
 # V-JEPA 2-AC Isaac Sim Planner
 
 This repository contains a closed-loop Model Predictive Control (MPC) planner for a Franka Emika Panda arm in NVIDIA Isaac Sim. It leverages the [V-JEPA 2](https://github.com/facebookresearch/vjepa2) action-conditioned (AC) predictor for goal-image directed manipulation via ROS 2.
@@ -85,14 +80,4 @@ You can tune the behavior of the planner at runtime using ROS 2 parameters:
 | `max_action_m` | `0.075` | Maximum translational step size (meters). |
 | `gripper_type` | `robotiq` | Gripper configuration (`robotiq` or `franka`). |
 
-## Kinematics Notes
 
-Kinematics are handled via [Robotics Toolbox for Python](https://github.com/petercorke/robotics-toolbox-python).
-
-* Measurements are tracked at `panda_link8` (the flange).
-* An explicit TCP transform is applied via parameters `tcp_offset_m` (default: 0.2104m) and `tcp_rz_deg` (default: -45°).
-* If you change the end-effector attached in Isaac Sim, ensure you update these parameters to match.
-
-```
-
-```
