@@ -1,5 +1,5 @@
 # V-JEPA 2-AC Isaac Sim Planner
-
+![V-JEPA 2 Demo](demo.gif)
 This repository contains a closed-loop Model Predictive Control (MPC) planner for a Franka Emika Panda arm in NVIDIA Isaac Sim. It leverages the [V-JEPA 2](https://github.com/facebookresearch/vjepa2) action-conditioned (AC) predictor for goal-image directed manipulation via ROS 2.
 
 ## Overview
